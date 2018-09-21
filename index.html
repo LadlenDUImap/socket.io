@@ -26,7 +26,11 @@
 <script type="text/javascript">
     $(document).ready(function () {
         //var socket = io.connect('http://localhost:8008');
-        var socket = io.connect('http://socket.io.local:8008');
+        var socket = io.connect('https://socket.io.local:8008');
+		//var socket = io.connect('https://104.31.71.104:8008');
+		
+		//var socket = io.connect('https://app.fotonbank.io:8008');
+		
         var name = 'Пётр_' + (Math.round(Math.random() * 10000));
         var messages = $("#messages");
         var message_txt = $("#message_text")
