@@ -720,7 +720,14 @@ function wsSendClientMessage($clientID, $opcode, $message) {
 		
 		$left = 2 + $payloadLengthExtendedLength + $bufferLength;
 		do {
+
 			$sent = @socket_send($socket, $buffer, $left, 0);
+
+			for ($i = 0; $i < 5; ++$i) {
+			    sleep(1);
+                $sent = @socket_send($socket, $buffer, $left, 0);
+            }
+
 			if ($sent === false) return false;
 			
 			$left -= $sent;

@@ -38,12 +38,13 @@
 
 // for other computers to connect, you will probably need to change this to your LAN IP or external IP,
 // alternatively use: gethostbyaddr(gethostbyname($_SERVER['SERVER_NAME']))
-define('CB_SERVER_BIND_HOST', '0.0.0.0');
+//define('CB_SERVER_BIND_HOST', '0.0.0.0');
 //define('CB_SERVER_BIND_HOST', '127.0.0.1');
-//define('CB_SERVER_BIND_HOST', '192.168.68.4');
+define('CB_SERVER_BIND_HOST', '192.168.68.4');
+//define('CB_SERVER_BIND_HOST', 'webmobile.local');
 
 // also change at top of main.js
-define('CB_SERVER_BIND_PORT', 9300);
+define('CB_SERVER_BIND_PORT', 62342);
 
 // also change at top of main.js
 define('CB_MAX_USERNAME_LENGTH', 18);

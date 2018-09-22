@@ -1,7 +1,12 @@
 cb = {
 	// settings
-	serverHost: window.location.host, // automatically retrieved from the URL
-	serverPort: 9300,
+	//serverHost: window.location.host, // automatically retrieved from the URL
+	//serverPort: 9300,
+    //serverHost: '151.80.196.191', // automatically retrieved from the URL
+    //serverPort: 62342,
+    //serverHost: 'webmobile.local', // automatically retrieved from the URL
+    serverHost: '192.168.68.4', // automatically retrieved from the URL
+    serverPort: 62342,
 	usernameMaxLength: 18,
 	
 	// internal variables
